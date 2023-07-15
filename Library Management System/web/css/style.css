@@ -1,0 +1,410 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 Nov, 2022, 6:50:30 PM
+    Author     : Mandy
+*/
+/* Light mode */
+.dark{
+    background-color: #222;
+    color: white;
+}
+.change{
+    color: white;
+}   
+
+
+.index_body{
+    margin: 0px;   
+}
+.Homepage_header{
+    display: flex;
+    align-items: left;
+    color: black;
+    text-align: left;
+    padding: 0px 20px;
+    font-size: 17px;
+    margin: 1px;
+}
+.Homepage_header .title{
+    padding-left: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.index_container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topbar{
+    display:flex;
+    flex-direction: row;
+}
+.toggle-dark{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.mode_switch {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px; 
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 20px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+.Login {
+    background-image: url(../img/Reg_Library_Cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    box-sizing: border-box;
+}
+.Register {
+    background-image: url(../img/Reg_Library_Cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    box-sizing: border-box;
+}
+.homepage{
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.h2_header{
+    float: right;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.logout{
+    background-color: #ddd;
+    float: right;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/***********************************************
+       Account Registartiona and Login
+***********************************************/
+.box,
+.regbox{
+    width: 320px;
+    height: 500px;
+    background: #2f3542;
+    margin: 0;
+    padding: 30px;
+    top: 55%;
+    left: 50%;
+    color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.avatar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    top: -22%;
+    position: absolute;
+    left: calc(50% - 75px);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box h1{
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.box input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.box input[type="submit"] {
+    display: block;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #eccc68;
+    color: #000;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.box input[type="submit"]:hover {
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #ff6348;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.box a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.box a:hover {
+    color: #eccc68;
+}
+
+
+
+
+.regbox .avatar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+    top: -19%;
+    position: absolute;
+    left: calc(50% - 75px);
+    border-radius: 50%;
+}
+
+.regbox h1 {
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.regbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.regbox input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.regbox input[type="text"],
+.regbox input[type="password"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.regbox input[type="submit"] {
+    display: block;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #eccc68;
+    color: #000;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.regbox input[type="submit"]:hover {
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #ff6348;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.regbox a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.regbox a:hover {
+    color: #eccc68;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+
+}
